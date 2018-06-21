@@ -1,10 +1,6 @@
 /* CSS Document */
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Raleway');
 
-html{
-
-}
-
 body{
 	font-family: 'Amatic+SC', sans-serif;
 	background-color: #eee;
@@ -33,7 +29,7 @@ header{
 .logo{
 	width: 300px;
 	height: auto;
-	padding: 5px 2px;
+	padding: 12px;
 	float: left;
 }
 
@@ -67,75 +63,8 @@ header nav ul li a {
 	text-decoration:none;
 }
 
-#middle{
-	width: 100%;
-	height: 93%;
-	float: left;
-	text-align: center;
-	background-color: #fff;
-}
-.slider{
-	margin-top:100px;
-}
-
-.slider ul {
-  display: flex;
-  padding: 0;
-  width: 400%;
-  margin: auto;
-  animation: slide 20s infinite alternate cubic-bezier(.68,-0.55,.27,1.55);
-}
-
-.slider li {
-  width: 100%;
-  list-style: none;
-}
-
-.slider img {
-  width: 100%;
-}
-
-@keyframes slide {
-  0% {margin-left: 0;}
-  20% {margin-left: 0;}
-
-  25% {margin-left: -100%;}
-  45% {margin-left: -100%;}
-
-  50% {margin-left: -200%;}
-  70% {margin-left: -200%;}
-
-  75% {margin-left: -300%;}
-  100% {margin-left: -300%;}
-}
-
-footer{
-	width: 100%;
-	height: 7%;
-	float: left;
-	text-align: center;
-	background-color: #000;
-	color: #fff;
-}
-
-@media(max-width:936px){
-	#navConta{display: none;}
-}
-
-@media(max-width:751px){
-	#navCatal{display: none;}
-}
-
-@media(max-width:555px){
-	#navInicio{display: none;}
-}
-
-@media(max-width:365px){
-	.logo{display: none;}
-}
-
-@media(min-width:937px){
-	sidemenu , .hamburger{display: none;}
+#nav-container{
+	padding: 1% 0% 0% 30%;
 }
 
 .hamburger{
@@ -194,6 +123,85 @@ footer{
   font-size:36px;
   margin-left:50px;
 }
+
+#middle{
+	width: 100%;
+	height: 93%;
+	float: left;
+	text-align: center;
+	background-color: #fff;
+}
+
+.slider{
+	margin-top: 100px;
+}
+
+ .slider ul {
+   display: flex;
+   padding: 0;
+   width: 400%; 
+	margin: auto;
+   animation: slide 20s infinite alternate cubic-bezier(.68,-0.55,.27,1.55);
+ }
+
+.slider li {
+ width: 100%;
+ list-style: none;
+}
+
+  .slider img {
+    width: 100%;
+	  height: 53%;
+  }
+
+  @keyframes slide {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+  }
+
+footer{
+	width: 100%;
+	height: 7%;
+	float: left;
+	text-align: center;
+	background-color: #000;
+	position: fixed;
+	bottom: 0;
+}
+
+p{
+	color: #fff;
+}
+
+@media(max-width:936px){
+	#navConta{display: none;}
+}
+
+@media(max-width:751px){
+	#navCatal{display: none;}
+}
+
+@media(max-width:555px){
+	#navInicio{display: none;}
+}
+
+@media(max-width:365px){
+	.logo{display: none;}
+}
+
+@media(min-width:937px){
+	sidemenu , .hamburger{display: none;}
+}
+
 /*
 COMMENTS
 */
