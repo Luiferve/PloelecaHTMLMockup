@@ -1,0 +1,199 @@
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Raleway');
+
+html{
+
+}
+
+body{
+	font-family: 'Amatic+SC', sans-serif;
+	background-color: #eee;
+	margin:0;
+	overflow: hidden;
+}
+
+#page{
+	width: 100%;
+	height: 96vh;
+	background-color: #fff;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+/* Cambiar el azul del header*/
+header{
+	width: 100%;
+	height: 100px;
+	position: fixed;
+	float: left;
+	text-align: justify;
+	background-color: darkblue;
+}
+
+.logo{
+	width: 300px;
+	height: auto;
+	padding: 5px 2px;
+	float: left;
+}
+
+header nav{
+	float:left;
+}
+
+/* Cambiar el azul del header*/
+header nav ul{
+	list-style: none;
+	overflow: hidden;
+	background-color: darkblue;
+}
+
+header nav ul li {
+	float: left;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+/* Si se cambia el azul de header, cambiar el azul del hover*/
+header nav ul li:hover {
+	background-color:#0056FC;
+	border-radius: 7px 7px 0px 0px;
+}
+
+header nav ul li a {
+	display: block;
+	padding: 20px 40px;
+	color:  #fff;
+	text-decoration:none;
+}
+
+#middle{
+	width: 100%;
+	height: 93%;
+	float: left;
+	text-align: center;
+	background-color: #fff;
+}
+.slider{
+	margin-top:100px;
+}
+
+.slider ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  margin: auto;
+  animation: slide 20s infinite alternate cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+.slider li {
+  width: 100%;
+  list-style: none;
+}
+
+.slider img {
+  width: 100%;
+}
+
+@keyframes slide {
+  0% {margin-left: 0;}
+  20% {margin-left: 0;}
+
+  25% {margin-left: -100%;}
+  45% {margin-left: -100%;}
+
+  50% {margin-left: -200%;}
+  70% {margin-left: -200%;}
+
+  75% {margin-left: -300%;}
+  100% {margin-left: -300%;}
+}
+
+footer{
+	width: 100%;
+	height: 7%;
+	float: left;
+	text-align: center;
+	background-color: #000;
+	color: #fff;
+}
+
+@media(max-width:936px){
+	#navConta{display: none;}
+}
+
+@media(max-width:751px){
+	#navCatal{display: none;}
+}
+
+@media(max-width:555px){
+	#navInicio{display: none;}
+}
+
+@media(max-width:365px){
+	.logo{display: none;}
+}
+
+@media(min-width:937px){
+	sidemenu , .hamburger{display: none;}
+}
+
+.hamburger{
+  background-color:#3b5998;
+  overflow:hidden;
+  height:100px;
+}
+
+.hamburger a{
+  float:left;
+  display:block;
+  color:#f2f2f2;
+  text-align:center;
+  padding:32px 16px;
+  text-decoration:none;
+  font-size:17px;
+}
+
+.hamburger a:hover{
+  background-color:#ddd;
+  color:#000;
+}
+
+
+.sidemenu{
+  height:100%;
+  width:0;
+  position:fixed;
+  z-index:1;
+  top:0;
+  left:0;
+  background-color:#111;
+  opacity:0.9;
+  overflow-x:hidden;
+  padding-top:60px;
+  transition:0.5s;
+}
+
+.sidemenu a{
+  padding:10px 10px 10px 30px;
+  text-decoration:none;
+  font-size:22px;
+  color:#ccc;
+  display:block;
+  transition:0.3s;
+}
+
+.sidemenu a:hover{
+  color:#fff;
+}
+
+.sidemenu #cerrarbtn{
+  position:absolute;
+  top:0;
+  right:22px;
+  font-size:36px;
+  margin-left:50px;
+}
+/*
+COMMENTS
+*/
