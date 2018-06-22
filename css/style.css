@@ -3,7 +3,7 @@
 
 body{
 	font-family: 'Amatic+SC', sans-serif;
-  background-color: #f2f2f2;;
+	background-color: #eee;
 	margin:0;
 	overflow: hidden;
 }
@@ -131,7 +131,7 @@ header nav ul li a {
 	text-align: center;
 	background-color: #fff;
 }
-
+/*Index*/
 .slider{
 	margin-top: 12.5vh;
 }
@@ -139,7 +139,7 @@ header nav ul li a {
  .slider ul {
    display: flex;
    padding: 0;
-   width: 400%;
+   width: 400%; 
 	margin: auto;
    animation: slide 20s infinite alternate cubic-bezier(.68,-0.55,.27,1.55);
  }
@@ -167,7 +167,97 @@ header nav ul li a {
     75% {margin-left: -300%;}
     100% {margin-left: -300%;}
   }
+/*end Index*/
+/*Catalogue*/
+#store-wrapper{
+	background-color: #fff;
+	top:100px;
+	width: 100%;
+	height: 104.5%;
+}
 
+#category_list{
+	display: flex;
+	margin: 150px 0 0 100px;
+	background-color: #FA0105;
+	flex-direction: column;
+	width: 12%;
+	border-radius: 10px 0px 0px 10px;
+}
+
+#category_list .category_item{
+	display: block;
+	margin:52px 10px;
+	padding: 23px 0;
+	text-decoration: none;
+	color: #fff;
+}
+
+#category_list .category_item:hover {
+	background-color:#F44648;
+	border-radius: 7px 7px 0 0;
+}
+
+#products_list {
+	float: left;
+	display:flex;
+	margin: auto;
+	background-color: #0056FC;
+	flex-direction: row;
+	width: 72%;
+	border-radius: 0 10px 10px 0;
+}
+
+#products_list .product_item{
+	display: block;
+	margin:52px 10px;
+	padding: 23px 0;
+	text-decoration: none;
+	color: #fff;
+}
+/*end Catalogue*/
+/*Contact-us*/
+#form{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-top: 80px;
+}
+
+input[type=submit] {
+    background-color: darkblue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #0056FC;
+}
+
+input[type=reset] {
+    background-color: darkblue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    /*float: right;*/
+}
+
+input[type=reset]:hover {
+    background-color: #0056FC;
+}
+input[type=text], #msg,#email {
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+/*end Contact-us*/
 footer{
 	width: 100%;
 	height: 7%;
@@ -182,65 +272,23 @@ p{
 	color: #fff;
 }
 
-#form{
-	border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-	margin-top: 80px;
-}
-
-
-input[type=submit] {
-    background-color: #386fa4;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type=submit]:hover {
-    background-color: #133c55;
-}
-
-input[type=reset] {
-    background-color: #386fa4;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    /*float: right;*/
-}
-
-input[type=reset]:hover {
-    background-color: #133c55;
-}
-input[type=text], #msg,#email {
-    width: 80%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-}
-
-@media(max-width:956px){
+@media(max-width:936px){
 	#navConta{display: none;}
 }
 
-@media(max-width:772px){
+@media(max-width:751px){
 	#navCatal{display: none;}
 }
 
-@media(max-width:575px){
+@media(max-width:555px){
 	#navInicio{display: none;}
 }
 
-@media(max-width:385px){
+@media(max-width:365px){
 	.logo{display: none;}
 }
 
-@media(min-width:957px){
+@media(min-width:937px){
 	sidemenu , .hamburger{display: none;}
 }
 
