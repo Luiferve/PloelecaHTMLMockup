@@ -3,35 +3,87 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Contáctanos | Ploeleca Ferreteria</title>
-		<style>
-			type="text/css"
-		</style>
-		<link href="style.css" rel="stylesheet" type="text/css" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<link rel="shortcut icon" href="assets/ShortcutIcon.jpg" />
 	</head>
 
 	<body>
-		<div class="container">
+		<div id="page">
 			
 			<header>
+				<nav class="hamburger">
+					<span>
+						<a href="#" onclick="openSlideMenu()">
+							<svg width="30" height="30">
+									<path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+									<path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+									<path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+							</svg>
+						</a>
+					</span>
+				</nav>
+
+				<div id="sidemenu" class="sidemenu">
+			    <a href="#" id="cerrarbtn" onclick="closeSlideMenu()">&times;</a>
+			    <a href="index.html">INICIO</a>
+			    <a href="catalogue.html">CATÁLOGO</a>
+			    <a href="contact-us.html">CONTÁCTANOS</a>
+			  </div>
+
 				<a href="index.html">
 					<img src="assets/ploelecasign.png" alt="Logo" class="logo">
 				</a>
-				<nav>
-					<ul>
-						<li><a href="index.html">Inicio</a></li>
-						<li><a href="catalogue.html">Catalogo</a></li>
-						<li><a href="contact-us.html">Contactanos</a></li>
-					</ul>
-				</nav>
-				<!-- Falta implementar buscador -->
+				<div id="nav-container">
+					<nav id="topnavbar">
+						<ul>
+							<li><a href="index.html" id="navInicio">INICIO</a></li>
+							<li><a href="catalogue.html" id="navCatal">CATÁLOGO</a></li>
+							<li><a href="contact-us.html" id="navConta">CONTÁCTANOS</a></li>
+						</ul>
+					</nav>
+				</div>
 			</header>
+			
 			<div id="middle">
-				<!-- Falta implementar pantalla de contacto -->
+					<div id="form">
+					<form>
+						<legend><h3>Formulario de contacto:</h3></legend>
+					  Correo Electrónico:<br>
+					  <input id="email" type="email" name="email" value="" placeholder="Correo Electrónico" required>
+					  <br><br>
+						Nombre:<br>
+					  <input type="text" name="name" value="" placeholder="Nombre">
+					  <br><br>
+						Teléfono:<br>
+					  <input type="text" name="phone" value="" maxlength="11" placeholder="Teléfono">
+					  <br><br>
+						Mensaje:<br>
+						<textarea id="msg" name="msg" placeholder="Escriba el mensaje" style="height:100px"></textarea><br>
+						<br>
+						<input type="reset" value="Limpiar">
+					  <input type="submit" value="Enviar">
+					</form>
+				</div>
 			</div>
+			
 			<footer>
 				<p>COPYRIGHT 2018 | TODOS LOS DERECHOS RESERVADOS</p>
 			</footer>
+			
 		</div>
+		
+		<script>
+			function openSlideMenu(){
+				document.getElementById('sidemenu').style.width = '250px';
+				document.getElementById('main').style.marginLeft = '250px';
+			}
+
+			function closeSlideMenu(){
+				document.getElementById('sidemenu').style.width = '0';
+				document.getElementById('main').style.marginLeft = '0';
+			}
+		</script>
+		
 	</body>
 </html>
 
