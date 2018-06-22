@@ -8,7 +8,7 @@
 
 	<body>
 		<div id="page">
-			
+
 			<header>
 				<nav class="hamburger">
 					<span>
@@ -42,17 +42,36 @@
 					</nav>
 				</div>
 			</header>
-			
+
 			<div id="middle">
-				
+				<div id="form">
+					<form>
+						<legend><h3>Formulario de contacto:</h3></legend>
+					  Correo Electrónico:<br>
+					  <input id="email" type="email" name="email" value="" placeholder="Correo Electrónico" required>
+					  <br><br>
+						Nombre:<br>
+					  <input type="text" name="name" value="" placeholder="Nombre">
+					  <br><br>
+						Teléfono:<br>
+					  <input type="text" name="phone" value="" maxlength="11" placeholder="Teléfono">
+					  <br><br>
+						Mensaje:<br>
+						<textarea id="msg" name="msg" placeholder="Escriba el mensaje" style="height:100px"></textarea><br>
+						<br>
+						<input type="reset" value="Limpiar">
+					  <input type="submit" value="Enviar">
+					</form>
+				</div>
+
 			</div>
-			
+
 			<footer>
 				<p>COPYRIGHT 2018 | TODOS LOS DERECHOS RESERVADOS</p>
 			</footer>
-			
+
 		</div>
-		
+
 		<script>
 			function openSlideMenu(){
 				document.getElementById('sidemenu').style.width = '250px';
@@ -64,11 +83,10 @@
 				document.getElementById('main').style.marginLeft = '0';
 			}
 		</script>
-		
+
 	</body>
 </html>
 
-<!-- 
-COMMENTS 
+<!--
+COMMENTS
 -->
-
